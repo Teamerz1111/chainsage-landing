@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(222.2 84% 4.9%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(222.2 84% 4.9%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(222.2 84% 4.9%);
+  --primary: hsl(222.2 47.4% 11.2%);
+  --primary-foreground: hsl(210 40% 98%);
+  --secondary: hsl(210 40% 96%);
+  --secondary-foreground: hsl(222.2 84% 4.9%);
+  --muted: hsl(210 40% 96%);
+  --muted-foreground: hsl(215.4 16.3% 46.9%);
+  --accent: hsl(210 40% 96%);
+  --accent-foreground: hsl(222.2 84% 4.9%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(214.3 31.8% 91.4%);
+  --input: hsl(214.3 31.8% 91.4%);
+  --ring: hsl(222.2 84% 4.9%);
+  --radius: 0.5rem;
+  
+  /* ChainSage Custom Colors */
+  --cyber-black: hsl(240 5% 4%);
+  --cyber-dark: hsl(240 5% 6%);
+  --cyber-gray: hsl(240 5% 10%);
+  --cyber-green: hsl(152 100% 50%);
+  --cyber-cyan: hsl(192 100% 50%);
+  --cyber-purple: hsl(258 74% 68%);
+}
+
+.dark {
+  --background: hsl(240 5% 4%);
+  --foreground: hsl(210 40% 98%);
+  --card: hsl(240 5% 6%);
+  --card-foreground: hsl(210 40% 98%);
+  --popover: hsl(240 5% 4%);
+  --popover-foreground: hsl(210 40% 98%);
+  --primary: hsl(210 40% 98%);
+  --primary-foreground: hsl(222.2 84% 4.9%);
+  --secondary: hsl(217.2 32.6% 17.5%);
+  --secondary-foreground: hsl(210 40% 98%);
+  --muted: hsl(217.2 32.6% 17.5%);
+  --muted-foreground: hsl(215 20.2% 65.1%);
+  --accent: hsl(217.2 32.6% 17.5%);
+  --accent-foreground: hsl(210 40% 98%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(210 40% 98%);
+  --border: hsl(217.2 32.6% 17.5%);
+  --input: hsl(217.2 32.6% 17.5%);
+  --ring: hsl(212.7 26.8% 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  .font-space {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-cyber-black {
+    background-color: var(--cyber-black);
+  }
+  .bg-cyber-dark {
+    background-color: var(--cyber-dark);
+  }
+  .bg-cyber-gray {
+    background-color: var(--cyber-gray);
+  }
+  .text-cyber-green {
+    color: var(--cyber-green);
+  }
+  .text-cyber-cyan {
+    color: var(--cyber-cyan);
+  }
+  .text-cyber-purple {
+    color: var(--cyber-purple);
+  }
+  .border-cyber-green {
+    border-color: var(--cyber-green);
+  }
+  .border-cyber-cyan {
+    border-color: var(--cyber-cyan);
+  }
+  .from-cyber-green {
+    --tw-gradient-from: var(--cyber-green);
+  }
+  .to-cyber-cyan {
+    --tw-gradient-to: var(--cyber-cyan);
+  }
+  .to-cyber-purple {
+    --tw-gradient-to: var(--cyber-purple);
+  }
+  .from-cyber-cyan {
+    --tw-gradient-from: var(--cyber-cyan);
+  }
+  .from-cyber-purple {
+    --tw-gradient-from: var(--cyber-purple);
+  }
+  .to-cyber-green {
+    --tw-gradient-to: var(--cyber-green);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.3); }
+  100% { box-shadow: 0 0 30px rgba(0, 255, 136, 0.6); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(0, 255, 136, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}

@@ -1,0 +1,127 @@
+uild a Landing Page for ChainSage
+
+Task: Build me a modern, responsive landing page for ChainSage, a real-time on-chain threat intelligence platform built on the 0G Network.
+
+Brand Context
+
+Product Name: ChainSage
+
+Tagline: “Your 24/7 On-Chain Security Analyst”
+
+One-liner: Real-time on-chain threat intelligence powered by 0G.
+
+Mission: Detect exploits, whale moves, and market manipulation before losses occur.
+
+Audience:
+
+DeFi traders & investors
+
+NFT collectors & founders
+
+Blockchain security analysts
+
+Institutions, DAOs, funds
+
+Sections to Include
+
+Hero Section
+
+Headline: “Stay Ahead of On-Chain Threats”
+
+Subheadline: “ChainSage processes massive blockchain data in real time to detect risks before they become losses.”
+
+CTA Buttons: Join Waitlist (primary), See Live Alerts (secondary)
+
+Background: Animated graph / blockchain visualization.
+
+Who It’s For (Personas)
+
+DeFi Traders & Investors → detect risks early
+
+NFT Collectors & Founders → early scam/rug warnings
+
+Security Analysts → actionable intelligence without manual digging
+
+Institutions/DAOs/Funds → automated monitoring
+
+Why It’s Important
+
+“On-chain markets move at breakneck speed—one exploit can cause millions in losses within minutes.”
+
+“Manual monitoring misses subtle patterns like liquidity drains, flash loans, or coordinated floor sweeps.”
+
+Visual: simple infographic showing “Exploit → Loss” vs. “ChainSage Alert → Prevention.”
+
+How It Works (3–4 steps)
+
+Ingest blockchain data streams
+
+Analyze with 0G-powered processing
+
+Detect threats and anomalies
+
+Send real-time alerts (Discord/Telegram/Email)
+
+Core Features (grid of cards)
+
+Real-time threat detection
+
+Whale & smart money tracking
+
+Market manipulation radar
+
+Risk scoring & playbooks
+
+Custom rule builder
+
+0G-powered scalability
+
+Live Alerts (Example Feed)
+
+Sample entries like:
+
+“Flash Loan Attack Detected — ETH Pool”
+
+“Whale moved 5,000 ETH into Uniswap”
+
+“NFT Floor Sweep Detected — Azuki Collection”
+
+Testimonials / Social Proof (placeholder section)
+
+Quote: “We caught a liquidity rug before the price collapsed—thanks to ChainSage.”
+
+Call-to-Action
+
+Strong CTA block: “Be the first to access real-time threat intelligence. Join the private beta today.”
+
+Waitlist signup form (name + email).
+
+Footer
+
+Links: Docs, Privacy, Terms, Contact, Twitter/X, Discord, GitHub.
+
+Note: “© ChainSage. Built on 0G Network.”
+
+Design Guidelines
+
+Style: Clean, modern, futuristic (cybersecurity vibe).
+
+Theme: Default to dark mode, with light mode toggle.
+
+Colors: Near-black background, accents in neon green/cyan.
+
+Typography: Bold sans-serif for headings (e.g., Inter, Space Grotesk), easy-to-read body font (Inter).
+
+Animations: Smooth fade/slide transitions on scroll; subtle hover effects.
+
+Responsiveness: Works seamlessly on desktop, tablet, mobile.
+
+Deliverable
+
+A single-page responsive website (React + Tailwind preferred, or clean HTML/CSS/JS if simpler).
+
+Include scroll navigation in the navbar linking to each section.
+
+Include a dark/light theme switcher.
+
+Include sample assets/placeholder visuals for hero background and alert feed.
